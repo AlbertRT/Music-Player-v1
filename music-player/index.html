@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="top-bar">
+            <i class="material_icon">expand_more</i>
+            <span>Now Playing</span>
+            <i class="material_icon">more_horiz</i>
+        </div>
+        <div class="img-area">
+            <img src="" alt="">
+        </div>
+        <div class="song-details">
+            <p class="name"></p>
+            <p class="artist"></p>
+        </div>
+        <div class="progress-area">
+            <div class="progress-bar"></div>
+            <div class="timer">
+                <span class="current">0:00</span>
+                <span class="duration"></span>
+            </div>
+            <audio src="" id="main-audio"></audio>
+        </div>
+        <div class="controls">
+            <i class="material_icon" id="repeat-plist" title="Repeat">repeat</i>
+            <i class="material_icon" id="prev">skip_previous</i>
+            <div class="play-pause">
+                <i class="material_icon">play_arrow</i>
+            </div>
+            <i class="material_icon" id="next">skip_next</i>
+            <i class="material_icon" id="more-music">queue_music</i>
+        </div>
+        <div class="music-list">
+            <div class="header">
+                <div class="row">
+                    <i class="material_icon">queue_music</i>
+                    <span>Music List</span>
+                </div>
+                <i id="close" class="material_icon">close</i>
+            </div>
+            <ul>
+                
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/music-list.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
